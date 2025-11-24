@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Showcase</title>
+    <link rel="stylesheet" href="card.css">
+
+    <script>
+        function description(id, btn) {
+            let para = document.getElementById(id);
+    
+            if (para.style.display === "none") {
+                para.style.display = "block";
+                btn.textContent = "Show Less";
+            } else {
+                para.style.display = "none";
+                btn.textContent = "Know More";
+            }
+        }
+    </script>
+    
+</head>
+
+<body>
+
+    <header class="header">
+        <h2>Star Trend Store</h2>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <h1 style="text-align: center;">Product Showcase</h1>
+    <br><br>
+
+    <div class="container">
+
+        <div class="card">
+            <img src="./assets/Bloom Gown.png" alt="Bloom Gown">
+            <h4>Product: Bloom Gown</h4>
+            <h5>Price: ₹77,000</h5>
+            <p id="desc1" class="descrip">
+                A light blue gown adorned with shimmering sequins and beadwork, featuring long embellished sleeves
+                and a dreamy layered tulle skirt.
+            </p>
+            <button onclick="description('desc1')">Know More</button>
+        </div>
+       
+        <div class="card">
+            <img src="./assets/Pink Grown.png" alt="Pink Gown">
+            <h4>Product: Pink Gown</h4>
+            <h5>Price: ₹1500</h5>
+            <p id="desc2" class="descrip">
+                Fabric: Net and satin or georgette for structure and flow.<br>
+                Style: Western elegance with traditional undertones.
+            </p>
+            <button onclick="description('desc2')">Know More</button>
+        </div>
+
+        <div class="card">
+            <img src="./assets/Yellow Gown.jpg" alt="Yellow Gown">
+            <h4>Product: Yellow Gown</h4>
+            <h5>Price: ₹2500</h5>
+            <p id="desc3" class="descrip">
+                Fabric: Satin or silk-blend with a shiny finish.<br>
+                Design: One-shoulder with floral embellishment.
+            </p>
+            <button onclick="description('desc3')">Know More</button>
+        </div>
+
+        <div class="card">
+            <img src="./assets/Blue Gown.jpg" alt="Blue Gown">
+            <h4>Product: Blue Gown</h4>
+            <h5>Price: ₹2000</h5>
+            <p id="desc4" class="descrip">
+                Fabric: Chiffon or georgette skirt with lace neckline.<br>
+                Belt: Light-colored belt for waist definition.
+            </p>
+            <button onclick="description('desc4')">Know More</button>
+        </div>
+
+        <div class="card">
+            <img src="./assets/purple saree.png" alt="Purple Saree">
+            <h4>Product: Purple Saree</h4>
+            <h5>Price: ₹12,000</h5>
+            <p id="desc5" class="descrip">
+                A luxurious purple saree perfect for weddings, festive occasions, or evening receptions.
+                Rich tones exude regal elegance and sophistication.
+            </p>
+            <button onclick="description('desc5')">Know More</button>
+        </div>
+
+        <div class="card">
+            <img src="./assets/Mint Green.png" alt="Mint Green Gown">
+            <h4>Product: Mint Green </h4>
+            <h5>Price: ₹15,000</h5>
+            <p id="desc6" class="descrip">
+                A soft mint green gown with delicate embellishments and a voluminous tulle skirt,
+                offering serene elegance and graceful movement.
+            </p>
+            <button onclick="description('desc6')">Know More</button>
+        </div>
+
+        <div class="card">
+            <img src="./assets/Red Gown.png" alt="Red Gown">
+            <h4>Product: Red Gown</h4>
+            <h5>Price: ₹98,000</h5>
+            <p id="desc7" class="descrip">
+                A premium red gown with rich embellishments and a flawless silhouette, ideal for grand events
+                and high-profile celebrations.
+            </p>
+            <button onclick="description('desc7')">Know More</button>
+        </div>
+   
+        <div class="card">
+            <img src="./assets/Saree.jpg" alt="Saree">
+            <h4>Product: Saree</h4>
+            <h5>Price: ₹17000</h5>
+            <p id="desc8" class="descrip">
+                Dazzle at your next event in this exquisite dark green saree, beautifully adorned with shimmering pearls. 
+            </p>
+            <button onclick="description('desc8')">Know More</button>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <p>© 2025 My Fashion Store | All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>
