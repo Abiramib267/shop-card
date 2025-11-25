@@ -3,14 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=card.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Showcase</title>
     <link rel="stylesheet" href="card.css">
-
     <script>
         function description(id, btn) {
             let para = document.getElementById(id);
-    
+
             if (para.style.display === "none") {
                 para.style.display = "block";
                 btn.textContent = "Show Less";
@@ -20,7 +19,7 @@
             }
         }
     </script>
-    
+
 </head>
 
 <body>
@@ -49,8 +48,8 @@
             </p>
             <button onclick="description('desc1')">Know More</button>
         </div>
-       
-            <div class="card">
+
+        <div class="card">
             <img src="./assets/Pink Grown.png" alt="Pink Gown">
             <h4>Product: Pink Gown</h4>
             <h5>Price: ₹1500</h5>
@@ -60,7 +59,7 @@
             </p>
             <button onclick="description('desc2')">Know More</button>
         </div>
-        
+
         <div class="card">
             <img src="./assets/Yellow Gown.jpg" alt="Yellow Gown">
             <h4>Product: Yellow Gown</h4>
@@ -115,13 +114,14 @@
             </p>
             <button onclick="description('desc7')">Know More</button>
         </div>
-   
+
         <div class="card">
             <img src="./assets/Saree.jpg" alt="Saree">
             <h4>Product: Saree</h4>
             <h5>Price: ₹17000</h5>
             <p id="desc8" class="descrip">
-                Dazzle at your next event in this exquisite dark green saree, beautifully adorned with shimmering pearls. 
+                Dazzle at your next event in this exquisite dark green saree, beautifully adorned with shimmering
+                pearls.
             </p>
             <button onclick="description('desc8')">Know More</button>
         </div>
